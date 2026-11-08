@@ -1,4 +1,4 @@
-module github.com/skeletg/tracking-meta
+module github.com/skeletg/skelet-tracking-meta
 
 go 1.27.3
 

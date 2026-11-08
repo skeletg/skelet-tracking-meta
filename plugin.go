@@ -20,7 +20,7 @@ import (
 )
 
 const (
-	Slug = "tracking-meta"
+	Slug = "skelet-tracking-meta"
 	Kind = "meta_capi"
 	// The Graph API version the requests are built against - Meta keeps each version for about two years
 	graphVersion = "v26.0"
@@ -44,7 +44,7 @@ var eventNames = map[string]string{
 }
 
 func init() {
-	p := sdk.RegisterPlugin(sdk.Manifest{Slug: Slug, Name: "Meta Conversions API", Version: "0.1.0", SDKRange: "^0.1.0"})
+	p := sdk.RegisterPlugin(sdk.Manifest{Slug: Slug, Name: "Meta Conversions API (in development)", Version: "0.1.0", SDKRange: "^0.1.0"})
 	defaults := make([]string, 0, len(eventNames))
 	for name := range eventNames {
 		defaults = append(defaults, name)

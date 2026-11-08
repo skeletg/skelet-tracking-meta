@@ -1,4 +1,7 @@
-# tracking-meta
+# skelet-tracking-meta
+
+> **In development.** Built from the vendor's documentation and tested against recorded requests, but not yet run
+> against a production account. Don't rely on it in production until it has been verified, and expect changes.
 
 A [Skelet](https://github.com/skeletg/skelet) tracking destination that sends shop events to Meta's Conversions API
 (Facebook, Instagram), server to server. Events share their id with a browser pixel, so if you run both, Meta counts
@@ -24,8 +27,10 @@ leave the shop.
 
 ## Install
 
+There are no releases yet, so install from `main`:
+
 ```bash
-skelet cli plugin add github.com/skeletg/tracking-meta@<version>
+skelet cli plugin add github.com/skeletg/skelet-tracking-meta@main
 ```
 
 Then rebuild the backend and add the destination under **Marketing → Tracking** in the dashboard.
